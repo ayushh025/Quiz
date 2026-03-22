@@ -2,7 +2,7 @@ A simple and interactive quiz application built using **TypeScript, HTML, and CS
 
 ## 🖥️ Live Demo
 
-🚀 Click here to try: https://your-live-link.com
+🚀 Click here to try: https://quiz-ayush.vercel.app
 
 ## 🚀 Features
 
