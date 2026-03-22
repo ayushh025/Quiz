@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Main wrapper -->
+    <div class="container">
+
+        <!-- Quiz title & total question count -->
+        <div class="info">
+            <h1>JS Quiz</h1>
+            <h3>Total question: <span id="totalque"></span></h2>
+        </div>
+        
+        <!-- Question + options + nav buttons -->
+        <div class="que-container">
+
+            <!-- Countdown timer -->
+            <p id="time"></p>
+        
+            <!-- Question text (filled by JS) -->
+            <p class="que"></p>
+
+            <!-- 4 radio options (A to D) -->
+            <div class="options">
+                <div class="opt-con">
+                    <input type="radio" class="radio" id="a" name="ans" value="a"><label for="a" class="opt"></label>
+                </div>
+                <div class="opt-con">
+                    <input type="radio" class="radio" id="b" name="ans" value="b"><label for="b" class="opt"></label>
+                </div>
+                <div class="opt-con">
+                    <input type="radio" class="radio" id="c" name="ans" value="c"><label for="c" class="opt"></label>
+                </div>
+                <div class="opt-con">
+                    <input type="radio" class="radio" id="d" name="ans" value="d"><label for="d" class="opt"></label>
+                </div>
+            </div>
+
+            <!-- Prev / Next(Submit on last question) buttons -->
+            <div class="buttons">
+                <button id="prev"></button>
+                <button id="next"></button>
+            </div>
+        </div>
+    </div>
+    <!-- Answer sheet overlay (hidden by default, shown after submit) -->
+    <div class="ans-con">
+        <div class="anssheet">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
