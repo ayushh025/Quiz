@@ -161,36 +161,60 @@ body {
   font-size: clamp(0.8rem, 1.4vw, 1.4rem);
   font-weight: 900;
 }
-/* Tablet */
 @media (max-width: 768px) {
   .container {
     width: 90%;
     height: auto;
-    min-height: 50vh;
   }
-  .options {
-    margin-top: 20px;
+
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px 5%;
+    height: auto;
   }
-  .anssheet {
-    width: 90%;
-    height: 85%;
+
+  .que-container {
+    padding: 5%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons button {
+    width: 100%;
   }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   body {
-    align-items: flex-start;
-    padding: 30px;
+    height: auto;
+    padding: 20px 0;
   }
+
   .container {
     width: 95%;
   }
-  .info {
-    padding: 0 4%;
+
+  .que {
+    flex-direction: column;
   }
+
+  .opt-con {
+    gap: 10px;
+  }
+
   .anssheet {
     width: 95%;
-    padding: 5%;
+    height: 85%;
+  }
+
+  #time {
+    position: static;
+    margin-bottom: 10px;
+    text-align: right;
   }
 }
